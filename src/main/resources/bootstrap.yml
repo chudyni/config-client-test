@@ -5,7 +5,15 @@ spring:
     active: "north"
   cloud:
     config:
-      uri: "http://localhost:8001"
+#      uri: "http://localhost:8001"
+      uri: "http://46.101.118.59:8009"
+  rabbitmq:
+    host: 46.101.118.59
+    port: 5672
+    username: guest
+    password: guest
+# RabbitMQ and Spring Cloud Config Server on remote machine as Docker containers
+
 server:
   port: 8002
 
